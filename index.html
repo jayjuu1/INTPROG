@@ -1,93 +1,159 @@
-<!doctype html>
-
-<html lang="en></html>
-<meta charset="utf-8">
-<style type="text/css">
-  body {
-    text-align: center;
-    margin: 0px;
-    background-color: snow;
-  }
-
-  h1 {
-    background-color: darkgreen;
-    color: white;
-    margin: 0px;
-    padding: 10px;
-  }
-
-  h2{
-    font-size: 1em;
-    margin-top: 2em;
-    font-style: italic;
-    opacity: 50%;
-  }
-
-  img {
-    width: 15%;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: 7px solid gainsboro; 
-  }
-
-  * {
-    font-family: monospace;
-  }
-
-  p {
-    margin-left: 7em;
-    margin-right: 7em;
-  }
-
-  .name {
-    font-size: 15px;
-    margin-top: 2em;
-  }
-</style>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>INTPROG Activity 1</title>
+  <meta charset="utf-8">
+  <title>INTPROG Activity 2</title>
+  <style>
+    body {
+      margin: 0px;
+      font-family: Arial;
+    }
+
+    header {
+      background-color: darkgoldenrod;
+    }
+
+    h1 {
+      margin: 0px;
+      padding: 20px;
+      display: inline-block;
+      color: white;
+    }
+
+    header button {
+      float: right;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin: 20px;
+    }
+
+    .container {
+      width: 20%;
+      float: left;
+      display: inline-block;
+      text-align: center
+    }
+    
+    .container h3 {
+      padding: 0px 8px;
+    }
+
+    .container p {
+      padding: 0px 10px;
+    }
+
+    .darker1 {
+      background-color: lightgray;
+    }
+
+    .darker2 {
+      background-color: lightgray;
+    }
+
+    img {
+      width: 8em;
+      height: 8em;
+      border: 5px solid darkgoldenrod;
+    }
+
+    footer {
+      background-color: darkgoldenrod;
+      color: white;
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+
+    h4 {
+      margin: 1em 0px;
+    }
+
+    .light-mode {
+      background-color: lightgray;
+      color: gray;
+    }
+
+    .dark-mode {
+      background-color: dimgray;
+      color: lightgray;
+    }
+  </style>
 </head>
-
 <body>
-  <h1>GROUP 3 MEMBERS</h1>
-  <p class="name"><strong>Orly Pantaleon</strong></p>
-    <div class="image">
-      <img src="orly.jpg" alt="photo">
-    </div>
-  <p>
-    Hi, my name is Orly Pantaleon! I live in Poblacion, Muntinlupa City and study in Pamantasan Lungsod ng Muntinlupa. I'm in my 3rd year now and I love cats and dogs. I am cheerful and trustworthy.
-  </p>
-  <p class="name"><strong>Tristan Dave Beldad</strong></p>
-    <div class="image">
-      <img src="tan.jpg" alt="photo">
-    </div>
-  <p>
-    Hello everyone! My name is Tristan Dave A. Beldad, and I’m currently a 3rd Year College at Pamantasan Ng Lungsod Ng Muntinlupa taking a bachelor course in Information Technology. I’m passionate about technology and I’m excited to explore more in this field. Outside of academics, I enjoy playing games and I'm looking forward to making lasting connections and sharing experiences with all of you.
-  </p>
-  <p class="name"><strong>William Se</strong></p>
-    <div class="image">
-      <img src="se.jpg" alt="photo">
-    </div>
-  <p>
-    Hello everyone, I'm William Se, a 3rd year college student at Pamantasan Lungsod ng Muntinlupa. I have a passion for technology and enjoy exploring the latest in software development. I love coffee craft and gaming, which gives me a great balance between the digital and natural worlds. I'm looking forward to meeting new people, learning as much as I can.
-  </p>
-  <p class="name"><strong>James Ronel Andrade</strong></p>
-    <div class="image">
-      <img src="james.jpg" alt="photo">
-    </div>
-  <p>
-    Greetings to everyone, My name is James Ronel E. Andrade, an average person who wants an average life but also wants a stable living.
-    I am a regular student who pursues BSIT currently studying at PLMun.
-    I'm residing in Brgy.San Antonio, San Pedro, Laguna which has a 1 hour  away from my school. I love listening to music, playing it on my guitar, watching animes and also sleeping. I wanted to learn deeper more on technologies and computer so that it can help for the future job that i want to take.
-  </p>
-  <p class="name"><strong>Jayson Carl Parro</strong></p>
-  <div class="image">
-    <img src="toni.jpg" alt="photo">
-  </div>
-  <p>
-    Hello! My name is Jayson Carl Parro, and I am a student at PLMun. I am currently studying under the BSIT course. My primary interests include building or coding, and I am excited to connect with others who share similar interests or who can offer new insights.
-  </p>
+  <header>
+    <h1>Mga Manggi</h1>
+    <button class="light-mode">Light Mode</button>
+    <button class="dark-mode">Dark Mode</button>
+  </header>
 
-  <h2>INTPROG Activity 1</h2>
+  <section id="members">
+    <div class="container">
+      <h3>Orly Pantaleon</h3>
+      <img src="images/orly.jpg" alt="Orly">
+      <p>
+        Hi, my name is Orly Pantaleon! I live in Poblacion, Muntinlupa City and study in Pamantasan Lungsod ng Muntinlupa. I'm in my 3rd year now and I love cats and dogs. I am cheerful and trustworthy.
+      </p>
+    </div>
+
+    <div class="container darker1">
+      <h3>Tristan Beldad</h3>
+      <img src="images/tan.jpg" alt="Tristan">
+      <p>
+        Hello everyone! My name is Tristan Dave A. Beldad, and I’m currently a 3rd Year College at Pamantasan Ng Lungsod Ng Muntinlupa taking a bachelor course in Information Technology. I’m passionate about technology and I’m excited to explore more in this field. Outside of academics, I enjoy playing games and I'm looking forward to making lasting connections and sharing experiences with all of you.
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>William Se</h3>
+      <img src="images/se.jpg" alt="William">
+      <p>
+        Hello everyone, I'm William Se, a 3rd year college student at Pamantasan Lungsod ng Muntinlupa. I have a passion for technology and enjoy exploring the latest in software development. I love coffee craft and gaming, which gives me a great balance between the digital and natural worlds. I'm looking forward to meeting new people, learning as much as I can.
+      </p>
+    </div>
+
+    <div class="container darker2">
+      <h3>James Andrade</h3>
+      <img src="images/james.jpg" alt="James">
+      <p>
+        Greetings to everyone, My name is James Ronel E. Andrade, an average person who wants an average life but also wants a stable living. I am a regular student who pursues BSIT currently studying at PLMun. I'm residing in Brgy.San Antonio, San Pedro, Laguna which has a 1 hour away from my school. I love listening to music, playing it on my guitar, watching animes and also sleeping. I wanted to learn deeper more on technologies and computer so that it can help for the future job that i want to take.
+      </p>
+    </div>
+
+    <div class="container">
+      <h3>Jayson Parro</h3>
+      <img src="images/toni.jpg" alt="Jayson">
+      <p>
+        Hello! My name is Jayson Carl Parro, and I am a student at PLMun. I am currently studying under the BSIT course. My primary interests include building or coding, and I am excited to connect with others who share similar interests or who can offer new insights.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <h4>IT3P Integrative Programming - Group 3</h4>
+  </footer>
+
+  <script>
+    const lightButton = document.querySelector('.light-mode');
+    const darkButton = document.querySelector('.dark-mode');
+    const darkerDiv1 = document.querySelector('.darker1');
+    const darkerDiv2 = document.querySelector('.darker2');
+    const paragraphs = document.querySelector('#members');
+    const body = document.body;
+
+    lightButton.addEventListener('click', () => {
+      body.style.backgroundColor = 'white';
+      paragraphs.style.color = "black";
+      darkerDiv1.style.backgroundColor = "lightgray";
+      darkerDiv2.style.backgroundColor = "lightgray";
+    });
+
+    darkButton.addEventListener('click', () => {
+      body.style.backgroundColor = 'gray';
+      paragraphs.style.color = "white";
+      darkerDiv1.style.backgroundColor = "dimgray";
+      darkerDiv2.style.backgroundColor = "dimgray";
+    });
+  </script>
 </body>
+</html>
