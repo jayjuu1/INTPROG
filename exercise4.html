@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getget aww and postimism integration</title>
+</head>
+<body>
+    <!-- POST METHOD -->
+<form method="POST" action="exercise4.php">
+    <label for="content">Write any content:</label><br>
+        <textarea name="content" id="content" rows="1" cols="10"></textarea><br>
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="email" id="email"><br><br>
+    <input type="submit" value="Submit via POST">
+</form>
+
+<!-- GET METHOD -->
+<form method="GET" action="exercise4.php">
+    <label for="filename">Enter filename to read:</label><br>
+        <input type="text" name="filename" id="filename" placeholder="anong hanap"><br>
+
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" id="name_get"><br><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" name="email" id="email_get"><br><br>
+
+        <label for="display_type">gusto mo ba makita ng naka array? If not, choose plain.</label><br>
+            <input type="radio" id="plain" name="display_type" value="plain" checked>
+            <label for="plain">Show as plain text</label><br>
+            <input type="radio" id="array" name="display_type" value="array">
+            <label for="array">Show as an array</label><br>
+
+    <input type="submit" value="Submit via GET">
+</form>
+</body>
+</html>
