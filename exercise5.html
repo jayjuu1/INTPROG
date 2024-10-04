@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with AJAX Suggestions</title>
+    <script>
+    function showHint(str) {
+        if (str.length == 0) {
+            document.getElementById("txtHint").innerHTML = "";
+            return;
+        } else {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("txtHint").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET", "gethint.php?q=" + str, true);
+            xmlhttp.send();
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <h2>Fill up to register</h2>
+    <!-- POST Method to Save Data -->
+    <form method="POST" action="post_data.php">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name"><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br><br>
+
+        <input type="submit" value="Submit via POST">
+    </form>
+
+    <h2>Confirm if you are already registered</h2>
+    <!-- GET Method to Show Suggestions -->
+    <label for="fname">Email:</label>
+    <input type="text" id="fname" name="fname" onkeyup="showHint(this.value)">
+    
+    <p>Email (Name): <span id="txtHint"></span></p>
+
+</body>
+</html>
