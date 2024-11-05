@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Nunito:400,700');
+
+/*
+$turquoise: #44ddd0;
+$green: #27d7a1;
+$light-green: #45f69e;
+$dark-green: rgb(0, 100, 80);
+*/
+
+html {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 60px;
+}
+
+a, p{
+    color: gray;
+    font-size: 20px;
+}
+
+.break {
+    margin-bottom: 10px;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.model-box {
+    text-align: center;
+    min-height: 100px;
+    width: 100%;
+    max-width: 350px;
+    background: white;
+    border-radius: 5px;
+    padding: 35px;
+}
+
+    h2 {
+        margin-top: 0;
+        font-size: 37px;
+    }
+
+    .model-box p {
+        margin-bottom: 0;
+    }
+
+    .model-box label {
+        font-size: 21px;
+    }
+
+.button {
+    font-size: 18px;
+    background: linear-gradient(45deg, #f0f0f0, #d9d9d9, #bfbfbf);
+    color: black;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+    .button:hover {
+        background: linear-gradient(45deg, #bfbfbf, #d9d9d9, #f0f0f0);
+        transform: scale(1.05);
+    }
+
+.container {
+    text-align: center;
+}
+  
